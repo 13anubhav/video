@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html  lang="en">
   <head>
@@ -41,7 +40,7 @@ body {
   height: 100vh;
   width: 100%;
   position: sticky;
-  top: 0;
+  top: 0;   
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -76,12 +75,13 @@ Your browser does not support the video tag.
  			<video width="800" muted preload>
    			<!-- <source src="https://cdn.ananaspizza.de/file/malte-image-store/keyframe-interval-20.mp4" type="video/mp4"> -->
                <!-- <source src="video_15.mp4" type="video/mp4"> -->
-               <source src="video_14.mp4" type="video/mp4">
+               <source src="video_16.mp4" type="video/mp4">
     		<!-- <p>Your user agent does not support the HTML5 Video element.</p> -->
             <video width="100%" height="100%" style="background-color: #fff;" src="">
       </video>
 		</div>
 	</div>
+    
 	<!-- <div id="bound-two" class="scroll-bound">
 		<div class="content">
 			<p>MP4 Video - Keyframe Interval 1</p>
@@ -97,7 +97,7 @@ Your browser does not support the video tag.
 			<p>MP4 Video - Keyframe Interval 20</p>
  			<video width="600" muted preload>
    			 <source src="https://cdn.ananaspizza.de/file/malte-image-store/keyframe-interval-20.mp4" type="video/mp4"> -->
-               <source src="video_14.mp4" type="video_14/mp4">
+               <source src="video_16.mp4" type="video_14/mp4">
     		<!-- <p>Your user agent does not support the HTML5 Video element.</p> -->
 
       </video>
@@ -162,10 +162,10 @@ function handleTouchMove(evt) {
 
   if (Math.abs(xDiff) > Math.abs(yDiff)) {
     if (xDiff > 0) {
-      video.currentTime -= 1;
+      video.currentTime -= 0.5;
     //   video.currentTime -= 0.01;
     } else {
-      video.currentTime += 1;
+      video.currentTime += 0.5;
     }
   }
 
